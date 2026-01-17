@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Menu | Chicken Darling & The Sandwichoss</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background: #fff; 
+            color: #E85C0D; 
+            overflow-x: hidden; 
+        }
+
+        html {
+    scroll-behavior: smooth;
+}
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    background-color: #E85C0D; 
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #000B5E; 
+    transform: translateY(-5px); 
+    color: white;
+}
+
+        .navbar {
+            background-color: #E85C0D;
+            padding: 10px 60px; 
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+        }
+
+        .navbar img {
+            width: 70px;
+            margin-top: 10px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-block;
+            margin-top: -70px;
+        }
+
+        .banner {
+            background-color: #000B5E;
+            width: 100%;
+            height: 700px;
+        }
+
+        .home-info {
+            width: 100%;
+            overflow: hidden;
+            padding-top: 50px;
+        }
+
+        .teks-kiri { 
+            float: left; 
+            width: 550px; 
+            color: white;
+            margin-left: 75px; 
+        }
+
+        .logo-nama { 
+            width: 70%; 
+            margin-bottom: 20px; 
+            margin-left: 40px;
+        }
+
+        .home-info h2 { 
+            font-size: 40px; 
+            font-weight: bold;
+            margin-top: -20px;
+            margin-bottom: 55px;
+            margin-left: 75px;
+            padding-right: 50px;
+            color: white;
+        }
+
+        .gambar-kanan { 
+            float: right; 
+            width: 550px; 
+            margin-top: -320px; 
+        }
+
+        .roti-float { 
+            width: 100%; 
+            margin-right: 60px;
+            position: relative; 
+            animation: floating 3s infinite ease-in-out; 
+        }
+
+        @keyframes floating {
+            0%, 100% { top: 0px; }
+            50% { top: -20px; }
+        } 
+
+        .butang-group {
+            padding-top: 60px;
+        }
+
+        .btn-oren {
+            background-color: #E85C0D ;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            padding-right: 30px;
+            padding-left: 30px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-bottom: 30px;
+}
+
+.btn {
+  background-color:  #000B5E;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background-color: #123a6f;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(11, 31, 58, 0.4);
+}
+
+
+       
+        .btn-contact {
+            background-color: white;
+            text-decoration: none;
+            color: #000B5E;
+            padding: 10px;
+            padding-right: 40px;
+            padding-left: 40px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+            font-size: 20px;
+            margin-left: 30px;
+        }
+
+        footer { 
+            background: #000B5E; 
+            color: white; 
+            padding: 40px 20px; 
+            text-align: center; 
+        }
+
+        footer a { 
+            color: white; 
+            margin: 0 10px; 
+            font-size: 20px; 
+        }
+
+        .fade-in { 
+            opacity: 0; 
+            transform: translateY(30px); 
+            transition: 0.8s ease; 
+        }
+
+        .fade-in.show { 
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+
+        
+        .nz-section {
+            padding: 80px 20px;
+        }
+
+        .nz-section-title {
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .nz-section-title h2 {
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .nz-menu-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+            overflow: hidden;
+        }
+
+        .nz-menu-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .nz-menu-card img {
+            object-fit: cover;
+            aspect-ratio: 3 / 4;
+        }
+
+        .nz-price {
+            font-weight: 600;
+            color: #ff4d4d;
+        }
+
+       
+        .aq-menu-section {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .aq-section-title {
+            display: inline-block;
+            background:  #E85C0D;
+            padding: 10px 30px;
+            font-weight: bold;
+            position: relative;
+            border-radius: 4px 0 0 4px;
+            color: white;
+        }
+
+        .aq-section-title::after {
+            content: "";
+            position: absolute;
+            right: -30px;
+            top: 0;
+            width: 30px;
+            height: 100%;
+            background: #000B5E;
+            border-radius: 0 20px 20px 0;
+        }
+
+        .aq-menu-wrapper {
+            display: flex;
+            align-items: flex-start; 
+            margin-top: 10px;   
+        }
+
+        .aq-img-wrap {
+            padding: 8px 0 4px;   
+        }
+
+        .aq-menu-card {
+            width: 400px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+            margin-left:20px;
+            background-color:#E85C0D ;
+            color: white;
+            position: relative;   
+            overflow: visible;    
+        }
+
+        .aq-menu-card p {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 2px;
+            padding-bottom: 10px;
+            margin: 0;
+            font-size: 16px;
+            text-align: center ;
+            color:  #000B5E;
+        }
+
+        .aq-menu-content {
+            padding: 6px 14px 10px;
+        }
+
+        .aq-menu-card h4 {
+            text-align: center;
+            margin: 4px 0 4px;
+            color: white;
+            font-size: 18px;
+
+        }
+
+        .aq-menu-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .aq-menu-card img {
+            width: 70%;
+            height: 150px;           
+            object-fit: cover;     
+            object-position: center; 
+            display: block;
+            margin: 0 auto;   
+        }
+
+        .aq-price {
+            font-weight:400;
+            color: white;
+            text-decoration: none !important;
+        }
+
+        .aq-addon-card {
+            position: relative;   
+            overflow: visible;    
+        }
+
+        .aq-order-btn {
+            position: absolute;
+            right: -600px;         
+            top: 50%;
+            transform: translateY(-50%);
+            background: #000B5E;
+            color: white;
+            border: none;
+            padding: 30px 50px;
+            border-radius: 60px;
+            font-weight: bold;
+            font-size: 25px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .btn-contact:hover, .btn-oren:hover {
+            background-color:  maroon  ;
+            color: white ;
+        }
+
+        .nav-links a:hover { 
+            color: #000B5E; 
+        }
+                
+    </style>
+</head>
+
+<body>
+    <div id="top"></div>
+    <div class="banner">
+        <nav class="navbar">
+            <img src="images/logo_cl.png">
+            <div class="nav-links">
+                <a href="index.html" target="_BLANK">Home</a>
+                <a href="about_us.html" target="_BLANK">Background</a>
+                <a href="menu.html">Menu</a>
+                <a href="review.html" target="_BLANK">Review</a>
+                <a href="contact_us.html" target="_BLANK">Contact us</a>
+            </div>
+        </nav>
+
+
+        <div class="home-info">
+            <img src="images/the_sandwichoss.png" class="logo-nama">
+            <h2>Bukey Sandwich Biashe-Biashe</h2>
+            <div class="teks-kiri">
+                <p style="text-align: justify;">At The Sandwichoss, we offer more than just amazing sandwiches. Explore a wide selection of crowd-pleasing food that is sure to leave you wanting more. Click on the menu to discover our specials of the day !!</p>
+                <div class="butang-group">
+                    <a href="menu.html" class="btn-oren">BROWSE MENU</a>
+                    <a href="contact_us.html" class="btn-contact">ORDER NOW</a>
+                </div>
+            </div>
+            <div class="gambar-kanan">
+                <img src="images/roti.png" class="roti-float">
+            </div>
+        </div>
+    </div>
+
+
+    <section class="aq-menu-section">
+        <div class="aq-section-title">
+            <span>BEST SELLER</span>
+        </div>
+
+        <div class="aq-menu-wrapper">
+            <div class="card aq-menu-card">
+                <img src="images/20.png">
+                <div class="aq-img-wrap">
+                    <h4>Chicken Grill Honey Spicy</h4>
+                    <p>Grilled whole chicken leg glazed with sweet honey and spicy yummy sauce.</p>
+                    <p class="aq-price"><b>RM15</b></p>
+                </div>
+            </div>
+
+            <div class="card aq-menu-card">
+                <img src="images/21.png">
+                <div class="aq-img-wrap">
+                    <h4>Double McCheezy Beef</h4>
+                    <p>Two juicy beef patties layered with melted cheese and fresh lettuce.</p>
+                    <p class="aq-price"><b>RM15</b></p>
+                </div>
+            </div>
+
+            <div class="card aq-menu-card">
+                <img src="images/19.2.png">
+                <div class="aq-img-wrap">
+                    <h4>Double Cheezy Chicken Crispy</h4>
+                    <p>Crispy chicken fillet stacked with double cheese and rich, savoury sauce.</p>
+                    <p class="aq-price"><b>RM15</b></p>
+                </div>
+            </div>
+
+            <div class="card aq-menu-card">
+                <img src="images/17.png">
+                <div class="aq-img-wrap">
+                    <h4>Chicken Crispy With Egg Mayo</h4>
+                    <p>Golden crispy chicken paired with a soft egg and fresh ingredients.</p>
+                    <p class="aq-price"><b>RM12</b></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="aq-menu-section">
+        <div class="aq-section-title">
+            <span>SIGNATURE PICKS</span>
+        </div>
+        <div class="aq-menu-wrapper">
+            <div class="card aq-menu-card">
+                <img src="images/18.png">
+                <div class="aq-img-wrap">
+                    <h4>Cheezy Egg's 3</h4>
+                    <p>Soft eggs layered with melted cheese for a simple, satisfying taste.</p>
+                    <p class="aq-price"><b>RM10</b></p>
+                </div>
+            </div>
+            <div class="card aq-menu-card">
+                <img src="images/16.png">
+                <div class="aq-img-wrap">
+                    <h4>Chicken Granch WholeLeg</h4>
+                    <p>Grilled whole chicken leg served with ranch-style sauce.</p>
+                    <p class="aq-price"><b>RM15</b></p>
+                </div>
+            </div>
+            <div class="card aq-menu-card">
+                <img src="images/15.png">
+                <div class="aq-img-wrap">
+                    <h4>Mini McCheezy Beef</h4>
+                    <p>Tender beef served with melted cheese and savoury sauce.</p>
+                    <p class="aq-price"><b>RM10</b></p>
+                </div>
+            </div>
+            <div class="card aq-menu-card">
+                <img src="images/14.png">
+                <div class="aq-img-wrap">
+                    <h4>Mini Cheezy Chicken Crispy</h4>
+                    <p>Crispy chicken paired with cheese and a light savoury sauce.</p>
+                    <p class="aq-price"><b>RM10</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="aq-menu-section">
+        <div class="aq-section-title">
+            <span>CHICKEN DARLING</span>
+        </div>
+        <div class="aq-menu-wrapper">
+            <div class="card aq-menu-card">
+                <img src="images/darlinggg.png" style="width: 60%; padding-top: 3px;">
+                <div class="aq-img-wrap">
+                    <h4>Chicken Darling</h4>
+                    <p>Crispy fried whole chicken leg coated in a sweet honey glaze with a bold, spicy kick for maximum flavour.</p>
+                    <p class="aq-price"><b>RM28</b></p>
+                </div>
+            </div>
+            <div class="card aq-menu-card">
+                <img src="images/woleg.png" style="width:55%">
+                <div class="aq-img-wrap">
+                    <h4>Woleg Darling</h4>
+                    <p>Two pieces of crunchy fried chicken leg served with melted cheese, fresh lettuce, and rich signature sauce.</p>
+                    <p class="aq-price"><b>RM28</b></p>
+                </div>
+            </div>
+            <div class="card aq-menu-card">
+                <img src="images/singleee.png">
+                <div class="aq-img-wrap">
+                    <h4>Single Darling</h4>
+                    <p>Crispy chicken fillet stacked with cheese provided with rich savoury white sauce in mini version box.</p>
+                    <p class="aq-price"><b>RM17</b></p>
+                </div>
+            </div>
+            <div class="card aq-menu-card">
+                <img src="images/smokey.png" style="width:50%; padding-top: 3px;">
+                <div class="aq-img-wrap">
+                    <h4>Smokey Darling</h4>
+                    <p>Crunchy fried chicken coated in a smoky sauce and fresh toppings for a balanced taste.</p>
+                    <p class="aq-price"><b>RM17</b></p>
+                </div>
+            </div>
+        </div>
+    </section>      
+
+    <section class="aq-menu-section">
+        <div class="aq-section-title">
+            <span>SIDE DISHES</span>
+        </div>
+        <div class="aq-menu-wrapper">
+            <div class="card aq-menu-card">
+                <img src="images/looded.png" style="width:45%">
+                <div class="aq-img-wrap">
+                    <h4>Loaded Nachos</h4>
+                    <p>Crispy nachos generously topped with melted cheese, savoury sauce, and fresh garnishes.</p>
+                    <p class="aq-price"><b>RM10</b></p>
+                </div>
+            </div>
+            <div class="card aq-menu-card">
+                <img src="images/ramen-stew.png" style="width:35%">
+                <div class="aq-img-wrap">
+                    <h4>Ramen Stew</h4>
+                    <p>Warm and comforting ramen served with crispy chicken strips in a rich, flavourful broth.</p>
+                    <p class="aq-price"><b>RM12</b></p>
+                </div>
+            </div>
+            <div class="card aq-menu-card">
+                <img src="images/bubur.png" style="width:45%; padding-top:1px;">
+                <div class="aq-img-wrap">
+                    <h4>Porridge Darling</h4>
+                    <p>Smooth, hearty porridge topped with crispy chicken and savoury seasoning for a comforting meal.</p>
+                    <p class="aq-price"><b>RM7</b></p>
+                </div>
+            </div>
+            <div class="card aq-menu-card">
+                <img src="images/mini.png" style="width:70%">
+                <div class="aq-img-wrap">
+                    <h4>Mini Nashville</h4>
+                    <p>Golden fried chicken bites coated in Nashville-style spice, served hot and full of bold flavour.</p>
+                    <p class="aq-price"><b>RM18</b></p>
+                </div>
+            </div>
+        </div>
+    </section>      
+
+    <section class="aq-menu-section">
+        <div class="aq-section-title">
+            <span>ADDS-ON</span>
+        </div>
+        <div class="aq-menu-wrapper">
+            <div class="card aq-menu-card">
+                <img src="images/sos.png" style="width:55%">
+                <div class="aq-img-wrap">
+                    <h4>Sauce</h4>
+                    <p>Choose from our signature sauces to add extra flavour and elevate your meal.</p>
+                    <p class="aq-price"><b>RM6</b></p>
+                </div>
+            </div>
+        </div>
+    </section>   
+
+    <section class="bg-light fade-in nz-section">
+        <h2 class="nz-section-title text-center mb-4">Choose Your Favorite</h2>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card nz-menu-card">
+                        <img src="images/poridge_darling.jpg">
+                        <div class="card-body text-center">
+                            <h5>Special Chicken Porridge</h5>
+                            <p>Warm and comforting porridge topped with tender, flavorful chicken.</p>
+                            <p class="nz-price">RM8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card nz-menu-card">
+                        <img src="images/menu_2.jpg">
+                        <div class="card-body text-center">
+                            <h5>Double Egg Mayo with Salad</h5>
+                            <p>Two creamy eggs with rich mayo, served with fresh salad in a soft bun.</p>
+                            <p class="nz-price">RM8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card nz-menu-card">
+                        <img src="images/menu_3.jpg">
+                        <div class="card-body text-center">
+                            <h5>Triple Smocky Egg Mayo</h5>
+                            <p>Soft bun with creamy smoky egg mayo, perfect for a quick bite.</p>
+                            <p class="nz-price">RM8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card nz-menu-card">
+                        <img src="images/menu_4.jpg">
+                        <div class="card-body text-center">
+                            <h5>Chicken crispy with Salad</h5>
+                            <p>Crispy golden chicken served with fresh garden salad and your favorite dressing.</p>
+                            <p class="nz-price">RM12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card nz-menu-card">
+                        <img src="images/menu_5.jpg">
+                        <div class="card-body text-center">
+                            <h5>Mini Edition Cheezy Chicken Crispy</h5>
+                            <p>Crispy fried chicken topped with melted cheese, served with fresh salad.</p>
+                            <p class="nz-price">RM13</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card nz-menu-card">
+                        <img src="images/menu_6.jpg">
+                        <div class="card-body text-center">
+                            <h5>Mini McCheezy Beef</h5>
+                            <p>Juicy beef patty with melted cheese in a soft bun, served fresh.</p>
+                            <p class="nz-price">RM10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card nz-menu-card">
+                        <img src="images/menu_7.jpg">
+                        <div class="card-body text-center">
+                            <h5>Double Cheezy Chicken Crispy</h5>
+                            <p>Double layers of crispy chicken with melted cheese and special sauce.</p>
+                            <p class="nz-price">RM15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card nz-menu-card">
+                        <img src="images/menu_8.jpg">
+                        <div class="card-body text-center">
+                            <h5>Cheesy Egg</h5>
+                            <p>Fluffy eggs with melted cheese, served fresh.</p>
+                            <p class="nz-price">RM7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card nz-menu-card">
+                        <img src="images/menu_9.jpg">
+                        <div class="card-body text-center">
+                            <h5>Woleg Darling</h5>
+                            <p>Fresh and refreshing drink with a smooth, balanced taste.</p>
+                            <p class="nz-price">RM10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card nz-menu-card">
+                        <img src="images/menu_10.jpg">
+                        <div class="card-body text-center">
+                            <h5>Chicken Darling</h5>
+                            <p>Crispy fried chicken with juicy meat and bold seasoning.</p>
+                            <p class="nz-price">RM10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card nz-menu-card">
+                        <img src="images/menu_11.jpg">
+                        <div class="card-body text-center">
+                            <h5>Ramen Stew with Cheese</h5>
+                            <p>Hot and creamy ramen cooked with rich cheese and savory broth.</p>
+                            <p class="nz-price">RM13</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card nz-menu-card">
+                        <img src="images/menu_12.jpg">
+                        <div class="card-body text-center">
+                            <h5>Mini Nashville</h5>
+                            <p>Crispy chicken coated in our signature Nashville spicy sauce.</p>
+                            <p class="nz-price">RM18</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="#top" class="back-to-top" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <div class="cta fade-in">
+        <h2 style="font-weight: bold; text-align: center;">Hungry Already?</h2>
+        <div class="btn-wrapper">
+  <button class="btn">
+    <a href="contact_us.html">Order Now</a>
+  </button>
+</div>
+
+    </div>
+
+    <footer class="text-center">
+        <p style="padding-bottom: 20px;">© 2025 This Website is for education purposes only. Prepared by ALIYA, AQILAH, ASMA & NAZRAN | Deliciously Crispy, Always Fresh</p>
+        <div>
+            <a href="https://www.instagram.com/thesandwichoss/?hl=en" target="_BLANK"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/p/The-Sandwichoss-61555057340667/" target="_blank"><i class="fab fa-facebook" target="_blank"></i></a>
+            <a href="https://www.tiktok.com/@thesandwichoss_hq?lang=en" target="_BLANK"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        const fadeItems = document.querySelectorAll('.fade-in');
+        window.addEventListener('scroll', () => {
+            fadeItems.forEach(item => {
+                if (item.getBoundingClientRect().top < window.innerHeight - 100) {
+                    item.classList.add('show');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

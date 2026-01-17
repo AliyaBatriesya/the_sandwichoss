@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Contact Us | The Sandwichoss</title>    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f8f9fa;
+            color: #000B5E;
+        }
+
+
+        .navbar {
+            background-color: #E85C0D;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar img { 
+            width: 70px; 
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover { 
+            color: #000B5E; 
+        }
+
+    
+        .contact-header {
+            background-color: #000B5E;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .contact-header h1 {
+            font-weight: 800;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+      
+        .order-section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .order-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .order-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: 0.3s ease;
+            flex: 1 1 300px; 
+            max-width: 350px;
+            border: 2px solid transparent;
+        }
+
+        .order-card:hover {
+            transform: translateY(-10px);
+            border-color: #E85C0D;
+        }
+
+        .order-card img {
+            width: 40%;
+            border-radius: 100%;
+        }
+
+        .icon-grab { color: #00B14F; }
+        .icon-panda { color: #D70F64; }
+        .icon-wa { color: #25D366; }
+
+        .order-card h3 { margin-bottom: 10px; font-size: 1.5rem; }
+        .order-card p { font-size: 14px; color: #666; margin-bottom: 20px; }
+
+        
+        .btn-order {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            transition: 0.3s;
+            width: 100%;
+        }
+
+        .btn-grab { background: #00B14F; }
+        .btn-panda { background: #D70F64; }
+        .btn-wa { background: #25D366; }
+
+        .btn-order:hover {
+            transform: scale(1.03);
+            filter: brightness(0.9);
+        }
+
+
+        footer {
+            background: #000B5E;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-note {
+            font-size: 12px;
+            margin-top: 10px;
+            opacity: 0.6;
+        }
+
+        @media (max-width: 768px) {
+            .navbar { flex-direction: column; text-align: center; }
+            .nav-links { margin-top: 15px; }
+            .nav-links a { margin: 0 10px; }
+            .contact-header h1 { font-size: 2.2rem; }
+        }
+
+        .stay-connected {
+    padding: 100px 5%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.connected-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 40px;
+}
+
+/* Teks Sebelah Kiri */
+.connected-left {
+    flex: 1;
+}
+
+.connected-left h1 {
+    font-size: 52px;
+    font-weight: 800;
+    color: #333; /* Warna hitam kelabu macam MB */
+    line-height: 1.1;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.social-links a {
+    font-size: 22px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #E85C0D; /* Warna oren awak */
+    transform: scale(1.2);
+}
+
+/* Galeri Sebelah Kanan */
+.connected-right {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+    .gif {
+    width: 30%;
+    margin-left: 410px;
+    margin-bottom: 50px;
+    border: 2px dashed #000B5E ;
+
+}
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <img src="images/logo_cl.png" alt="Logo">
+        <div class="nav-links">
+            <a href="index.html" target="_BLANK">Home</a>
+            <a href="about_us.html" target="_BLANK">Background</a>
+            <a href="menu.html" target="_BLANK">Menu</a>
+            <a href="review.html" target="_BLANK">Review</a>
+            <a href="contact_us.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <header class="contact-header">
+        <h1>Get In Touch</h1>
+        <p>Ready to satisfy your cravings? Order now through our official platforms!</p>
+    </header>
+
+    <section class="order-section">
+        <h2 class="section-title">Place Your Order</h2>
+        <img src="animation/food_delivery.gif" class="gif">
+        <div class="order-container">
+            
+            <div class="order-card">
+                <img src="images/gf.jpeg">
+                <h3>GrabFood</h3>
+                <p>The Sandwichoss - Pasir Tumboh</p>
+                <a href="https://r.grab.com/g/6-20260103_214759_691dc222d781462ba4a659626dd22928_MEXMPS-1-C6VCVY5GGJ5DTE" target="_blank" class="btn-order btn-grab">ORDER VIA GRAB</a>
+            </div>
+
+            <div class="order-card">
+                <img src="images/fp.jpg">
+                <h3>FoodPanda</h3>
+                <p>The Sandwichoss (Wisma)</p>
+                <a href="https://foodpanda.go.link/cRwGW" target="_blank" class="btn-order btn-panda">ORDER VIA PANDA</a>
+            </div>
+
+            <div class="order-card">
+                <img src="images/ws.png">
+                <h3>WhatsApp</h3>
+                <p>0176119434 - Chat directly for inquiries or manual orders.</p>
+                <a href="https://wa.me/60176119434?text=Hi%20The%20Sandwichoss,%20saya%20ingin%20membuat%20pesanan!" target="_blank" class="btn-order btn-wa">CHAT ON WHATSAPP</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="stay-connected">
+    <div class="connected-wrapper">
+        <div class="connected-left">
+            <h1>Stay Connected<br>with Us</h1>
+            <div class="social-links">
+                <a href="https://www.facebook.com/p/The-Sandwichoss-61555057340667/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/thesandwichoss/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@thesandwichoss_hq?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+
+        <div class="connected-right">
+            <div class="feed-item"><img src="images/tt.jpg"></div>
+            <div class="feed-item"><img src="images/fb.jpg"></div>
+            <div class="feed-item"><img src="images/ig.jpg"></div>
+        </div>
+    </div>
+</section>
+
+    <footer class="text-center">
+        <p style="padding-bottom: 20px;">© 2025 This Website is for education purposes only. Prepared by ALIYA, AQILAH, ASMA & NAZRAN | Deliciously Crispy, Always Fresh</p>
+        <div>
+            <a href="https://www.instagram.com/thesandwichoss/?hl=en" target="_BLANK"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/p/The-Sandwichoss-61555057340667/" target="_blank"><i class="fab fa-facebook" target="_blank"></i></a>
+            <a href="https://www.tiktok.com/@thesandwichoss_hq?lang=en" target="_BLANK"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

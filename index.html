@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sandwichoss | Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            background-color: #E85C0D; 
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background-color: #000B5E; 
+            transform: translateY(-5px); 
+            color: white;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 1.0s ease;
+        }
+
+        .fade-in.show {
+            opacity: 10;
+            transform: translateY(0);
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="top"></div>
+    <div class="banner">
+        <nav class="navbar">
+            <img src="images/logo_cl.png">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about_us.html" target="_BLANK">Background</a>
+                <a href="menu.html" target="_BLANK">Menu</a>
+                <a href="review.html" target="_BLANK">Review</a>
+                <a href="contact_us.html" target="_BLANK">Contact us</a>
+            </div>
+
+        </nav>
+
+        <div class="home-info">
+            <img src="images/the_sandwichoss.png" class="logo-nama">
+                <h2>Bukey Sandwich Biashe-Biashe</h2>
+                <div class="teks-kiri">
+                    <p style="text-align: justify;">At The Sandwichoss, we offer more than just amazing sandwiches. Explore a wide selection of crowd-pleasing food that is sure to leave you wanting more. Click on the menu to discover our specials of the day !!</p>
+                    <div class="butang-group">
+                        <a href="menu.html" class="btn-oren">BROWSE MENU</a>
+                        <a href="contact_us.html" class="btn-contact">ORDER NOW</a>
+                    </div>
+                </div>
+            <div class="gambar-kanan">
+                <img src="images/roti.png" class="roti-float">
+            </div>
+        </div>
+    </div>
+
+
+    <section class="menu-section">
+        <h2 class="menu-title">HOT ITEMS</h2>
+        <section class="bg-light fade-in">
+        <div class="carousel-wrapper">
+            <button class="nav-btn left" onclick="slideMenu(-300)">&#10094;</button>
+        
+            <div class="menu-container" id="scroll-box">
+                <div class="menu-card">
+                    <a href="menu.html" class="menu-link" target="_BLANK">
+                        <div class="img-wrap">
+                            <div class="img-sandwich"><img src="images/beef.png"></div>
+                        </div>
+                    </a>
+                    <h3>Spicy Cheezy Beef</h3>
+                </div>
+
+                <div class="menu-card">
+                    <a href="menu.html" class="menu-link" target="_BLANK">
+                        <div class="img-wrap"><img src="images/darling.png"></div>
+                    </a>
+                    <h3>Chicken Darling</h3>
+                </div>
+
+                <div class="menu-card">
+                    <a href="menu.html" class="menu-link" target="_BLANK">
+                        <div class="img-wrap"><img src="images/ramen-stew.png"></div>
+                    </a>
+                    <h3>Ramen Stew Darling</h3>
+                </div>
+
+                <div class="menu-card">
+                    <a href="menu.html" class="menu-link" target="_BLANK">
+                        <div class="img-wrap">
+                            <img src="images/woleg.png">
+                        </div>
+                    </a>
+                    <h3>Woleg Darling</h3>
+                </div>
+
+                <div class="menu-card">
+                    <a href="menu.html" class="menu-link" target="_BLANK">
+                        <div class="img-wrap"><img src="images/mini-nashville.png"></div>
+                    </a>
+                    <h3>Mini Nashville</h3>
+                </div>
+
+                <div class="menu-card">
+                    <a href="menu.html" class="menu-link" target="_BLANK">
+                        <div class="img-wrap">
+                            <div class="img-pickel"><img src="images/pickel-darling.png"></div>
+                        </div>
+                    </a>
+                    <h3>Pickel Darling</h3>
+                </div>
+
+            
+                </div>
+
+                <button class="nav-btn right" onclick="slideMenu(700)">&#10095;</button>
+        </div>
+    </section>
+</section>
+
+
+    <div class="section-biru-penuh">
+        <div class="kandungan-tengah">
+            <div class="fade-in">
+            <div class="kad-putih">
+                <div class="teks-kad">
+                    <h1>Our Story</h1>
+                    <p style="text-align: justify;"> <b>The Sandwichoss</b> originated as a local brand in Kubang Kerian, Kelantan 📍, and has since expanded its footprint to Bangi and Terengganu due to overwhelming support from our loyal fans! 🙌. We focus on delivering premium sandwiches that perfectly balance high-grade crispy fried chicken 🍗 We have successfully transformed the humble sandwich into an exclusive, hearty, and satisfying comfort food experience for everyone! 😋🔥</p>
+                    <a href="about_us.html" class="btn-baca-oren">Read More</a>
+                </div>
+
+                <div class="gambar-kad">
+                    <img src="images/hqkb.jpeg" class="img-preview-hd">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="section-biru-penuh">
+        <div class="kandungan-tengah">
+            <div class="fade-in">
+            <div class="kad-putih reverse">
+                <div class="teks-kad">
+                    <h1>Take a Peek! 👀✨</h1>
+                    <p style="text-align: justify;">Can you handle this much flavor? 🤤 Browse through our legendary Hot Items and discover why we’re more than just your ordinary sandwich. Fresh, crispy, and absolutely addictive! 🥪💫</p>
+                    <a href="menu.html" class="btn-baca-oren">See More</a>
+                </div>
+
+                <div class="gambar-kad">
+                    <img src="images/menu.jpeg" class="img-preview-hd">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-biru-penuh">
+        <div class="kandungan-tengah">
+            <div class="fade-in">
+            <div class="kad-putih">
+                <div class="teks-kad">
+                    <h1>What Our Fans Say! 🗣️</h1>
+                    <p style="text-align: justify;"> Huge portions and premium taste without breaking the bank! 💸 The ingredients feel so fresh and that signature sauce is a total game-changer. My go-to comfort food from now on! 🥪🙌 ⭐⭐⭐⭐⭐</p>
+                    <a href="review.html" class="btn-baca-oren">See More</a>
+                </div>
+
+                <div class="gambar-kad">
+                    <img src="images/review.png" class="img-preview-hd">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <section class="stay-connected">
+        <div class="fade-in">
+    <div class="connected-wrapper">
+        <div class="connected-left">
+            <h1>Stay Connected<br>with Us</h1>
+            <div class="social-links">
+                <a href="https://www.facebook.com/p/The-Sandwichoss-61555057340667/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/thesandwichoss/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@thesandwichoss_hq?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+
+        <div class="connected-right">
+            <div class="feed-item"><img src="images/tt.jpg"></div>
+            <div class="feed-item"><img src="images/fb.jpg"></div>
+            <div class="feed-item"><img src="images/ig.jpg"></div>
+        </div>
+    </div>
+</div>
+</section>
+
+<a href="#top" class="back-to-top" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <footer class="text-center">
+        <p style="padding-bottom: 20px;">© 2025 This Website is for education purposes only. Prepared by ALIYA, AQILAH, ASMA & NAZRAN | Deliciously Crispy, Always Fresh</p>
+        <div>
+            <a href="https://www.instagram.com/thesandwichoss/?hl=en" target="_BLANK"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/p/The-Sandwichoss-61555057340667/" target="_blank"><i class="fab fa-facebook" target="_blank"></i></a>
+            <a href="https://www.tiktok.com/@thesandwichoss_hq?lang=en" target="_BLANK"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+
+    <script>
+        function slideMenu(offset) {
+            const box = document.getElementById('scroll-box');
+            box.scrollBy({
+                left: offset,
+                behavior: 'smooth'
+            });
+         }
+    </script>
+
+    <script>
+        const fadeItems = document.querySelectorAll('.fade-in');
+
+        window.addEventListener('scroll', () => {
+            fadeItems.forEach(item => {
+                if (item.getBoundingClientRect().top < window.innerHeight - 100) {
+                    item.classList.add('show');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

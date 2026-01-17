@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chicken Darling | Reviews</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<style>
+     {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.navbar {
+    background-color: #E85C0D;
+    padding: 10px 60px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+.navbar img {
+    width: 70px;
+    margin-top: 10px;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: -70px;
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover { 
+    color: #000B5E; 
+}
+
+
+.banner {
+    background-color: #000B5E;
+    width: 100%;
+    height: 700px;
+}
+
+
+.home-info {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+
+.teks-kiri { 
+    float: left; 
+    width: 550px; 
+    color: white;
+    margin-left: 75px; 
+}
+
+
+.logo-nama { 
+    width: 70%; 
+    margin-bottom: 20px; 
+    margin-left: 40px;
+}
+
+
+.home-info h2 { 
+    font-size: 40px; 
+    margin-top: -20px;
+    margin-bottom: 55px;
+    margin-left: 75px;
+    padding-right: 50px;
+    color: white;
+}
+
+
+.gambar-kanan { 
+    float: right; 
+    width: 550px; 
+    margin-top: -320px; 
+}
+
+
+.roti-float { 
+    width: 100%; 
+    margin-right: 60px;
+    position: relative; 
+    animation: floating 3s infinite ease-in-out; 
+}
+
+
+@keyframes floating {
+    0%, 100% { top: 0px; }
+    50% { top: -20px; }
+}
+
+
+.butang-group {
+    padding-top: 60px;
+}
+
+
+.btn-oren {
+    background-color: #E85C0D ;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.btn-contact:hover, .btn-oren:hover {
+    background-color:  maroon  ;
+    color: white ;
+}
+
+
+.btn-contact {
+    background-color: white;
+    text-decoration: none;
+    color: #000B5E;
+    padding: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+.review-section {
+    padding: 80px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.review-main-card {
+    background: #E85C0D;
+    width: 100%;
+    max-width: 1100px;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.review-main-card h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.review-main-card .subtitle {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.video-container {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.video-container video {
+    width: 100%;
+    max-height: 420px;
+    border-radius: 18px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.review-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.review-card {
+    background-color: #000B5E;   
+    color: #ffffff;              
+    border-radius: 18px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.review-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 15px;
+    color: #ffffff;
+}
+
+.review-card h4 {
+    color: #ffb703;              
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.stars {
+    display: block;
+    margin-top: 12px;
+    color: #ffd166;
+    font-size: 20px;
+}
+
+.main-header {
+    background-color: #ff8c00;
+    padding: 20px 10%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: ##ffffff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.main-footer {
+    background-color: #000B5E;
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.main-footer {
+    background-color: #000B5E;
+    padding: 25px 10%;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.main-footer p {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.social-links a {
+    color: #ffd166;
+    font-size: 22px;
+    margin: 0 12px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+
+
+</style>
+<body>
+
+    <!-- ===== HEADER ===== -->
+<div class="banner">
+        <nav class="navbar">
+            <img src="images/logo_cl.png">
+            <div class="nav-links">
+                <a href="index.html" target="_BLANK">Home</a>
+                <a href="about_us.html" target="_BLANK">Background</a>
+                <a href="menu.html">Menu</a>
+                <a href="review.html" target="_BLANK">Review</a>
+                <a href="contact_us.html" target="_BLANK">Contact us</a>
+            </div>
+        </nav>
+
+
+        <div class="home-info">
+            <img src="images/the_sandwichoss.png" class="logo-nama">
+            <h2>Bukey Sandwich Biashe-Biashe</h2>
+            <div class="teks-kiri">
+                <p style="text-align: justify;">At The Sandwichoss, we offer more than just amazing sandwiches. Explore a wide selection of crowd-pleasing food that is sure to leave you wanting more. Click on the menu to discover our specials of the day !!</p>
+                <div class="butang-group">
+                    <a href="menu.html" class="btn-oren">BROWSE MENU</a>
+                    <a href="contact_us.html" class="btn-contact">ORDER NOW</a>
+                </div>
+            </div>
+            <div class="gambar-kanan">
+                <img src="images/roti.png" class="roti-float">
+            </div>
+        </div>
+    </div>
+
+<section class="review-section">
+
+    <div class="review-main-card">
+
+        <h2>Customer Reviews</h2>
+        <p class="subtitle">Watch & read what people say about Chicken Darling</p>
+
+        <div class="video-container">
+            <video controls>
+                <source src="video/makan.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="review-card-container">
+
+            <div class="review-card">
+                <span class="stars">★★★★★</span>
+                <p>
+                    The chicken is very crispy and juicy. The flavour is rich and satisfying.
+                    Definitely my favourite fried chicken.
+                </p>
+                <h4>– CEO of Review</h4>
+            </div>
+
+            <div class="review-card">
+                <span class="stars">★★★★☆</span>
+                <p>
+                    The taste is great and the portion is generous. Packaging is neat and delivery is fast.
+                </p>
+                <h4>– Happy Customer</h4>
+            </div>
+
+            <div class="review-card">
+                <span class="stars">★★★★★</span>
+                <p>
+                    Affordable price with premium taste. Very crispy and well-seasoned chicken.
+                </p>
+                <h4>– Food Lover</h4>
+            </div>
+
+            <div class="review-card">
+                <span class="stars">★★★★★</span>
+                <p>
+                    The chicken is served fresh and hot with a satisfying crunch.Every bite is delicious and full of flavour.I would highly recommend Chicken Darling to everyone.
+                <h4>– Sisfatimah</h4>
+            </div>
+
+            <div class="review-card">
+                <span class="stars">★★★★★</span>
+                <p>
+                    I really enjoyed the taste and texture of the chicken.The sauce complements the chicken very well.
+                    This is one of the best fried chicken I have tried.
+                </p>
+                <h4>– Mamijerung</h4>
+            </div>
+
+             <div class="review-card">
+                <span class="stars">★★★★☆</span>
+                <p>
+                    The chicken is perfectly cooked with a crispy outside and juicy inside.The seasoning is well-balanced and very flavourful.It is definitely worth the price.
+                </p>
+                <h4>– Dato Alif Syukri</h4>
+            </div>
+
+
+        </div>
+    </div>
+
+</section>
+
+<footer class="main-footer">
+    <p>© 2026 Chicken Darling. All Rights Reserved.</p>
+
+    <div class="social-links">
+        <a href="https://www.instagram.com/thesandwichoss_kb/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.facebook.com/p/Chicken-Darling-The-Sandwichoss-61555057340667/" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@chickendarlingofficial" target="_blank" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+    </div>
+</footer>
+
+
+</body>
+</html>
