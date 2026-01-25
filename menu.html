@@ -369,6 +369,34 @@
         .nav-links a:hover { 
             color: #000B5E; 
         }
+
+
+        .audio-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 100px auto; 
+            padding: 20px;
+            background: #fdfdfd;
+            border-radius: 50px;
+            width: fit-content;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border: 2px solid #E85C0D; 
+        }
+
+        .audio-container p {
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #000B5E;
+        }
+
+    
+        audio {
+            filter: sepia(100%) saturate(300%) hue-rotate(350deg) brightness(100%) contrast(90%); 
+        }
+
                 
     </style>
 </head>
@@ -404,6 +432,13 @@
         </div>
     </div>
 
+    <div class="audio-container">
+    <p><i class="fa-solid fa-music"></i> Listen to me !</p>
+    <audio controls>
+        <source src="audio/makan-aku.mp3" type="audio/mp3">
+        Your browser does not support audio element
+    </audio>
+</div>
 
     <section class="aq-menu-section">
         <div class="aq-section-title">
@@ -592,7 +627,7 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card nz-menu-card">
-                        <img src="images/poridge_darling.JPG">
+                        <img src="images/poridge_darling.jpg">
                         <div class="card-body text-center">
                             <h5>Special Chicken Porridge</h5>
                             <p>Warm and comforting porridge topped with tender, flavorful chicken.</p>
@@ -602,7 +637,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card nz-menu-card">
-                        <img src="images/menu_2.JPG">
+                        <img src="images/menu_2.jpg">
                         <div class="card-body text-center">
                             <h5>Double Egg Mayo with Salad</h5>
                             <p>Two creamy eggs with rich mayo, served with fresh salad in a soft bun.</p>
@@ -622,7 +657,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card nz-menu-card">
-                        <img src="images/menu_4.JPG">
+                        <img src="images/menu_4.jpg">
                         <div class="card-body text-center">
                             <h5>Chicken crispy with Salad</h5>
                             <p>Crispy golden chicken served with fresh garden salad and your favorite dressing.</p>
@@ -632,7 +667,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card nz-menu-card">
-                        <img src="images/menu_5.JPG">
+                        <img src="images/menu_5.jpg">
                         <div class="card-body text-center">
                             <h5>Mini Edition Cheezy Chicken Crispy</h5>
                             <p>Crispy fried chicken topped with melted cheese, served with fresh salad.</p>
@@ -642,7 +677,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card nz-menu-card">
-                        <img src="images/menu_6.JPG">
+                        <img src="images/menu_6.jpg">
                         <div class="card-body text-center">
                             <h5>Mini McCheezy Beef</h5>
                             <p>Juicy beef patty with melted cheese in a soft bun, served fresh.</p>
@@ -652,7 +687,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card nz-menu-card">
-                        <img src="images/menu_7.JPG">
+                        <img src="images/menu_7.jpg">
                         <div class="card-body text-center">
                             <h5>Double Cheezy Chicken Crispy</h5>
                             <p>Double layers of crispy chicken with melted cheese and special sauce.</p>
@@ -662,7 +697,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card nz-menu-card">
-                        <img src="images/menu_8.JPG">
+                        <img src="images/menu_8.jpg">
                         <div class="card-body text-center">
                             <h5>Cheesy Egg</h5>
                             <p>Fluffy eggs with melted cheese, served fresh.</p>
@@ -672,7 +707,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card nz-menu-card">
-                        <img src="images/menu_9.JPG">
+                        <img src="images/menu_9.jpg">
                         <div class="card-body text-center">
                             <h5>Woleg Darling</h5>
                             <p>Fresh and refreshing drink with a smooth, balanced taste.</p>
@@ -682,7 +717,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card nz-menu-card">
-                        <img src="images/menu_10.JPG">
+                        <img src="images/menu_10.jpg">
                         <div class="card-body text-center">
                             <h5>Chicken Darling</h5>
                             <p>Crispy fried chicken with juicy meat and bold seasoning.</p>
@@ -692,7 +727,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card nz-menu-card">
-                        <img src="images/menu_11.JPG">
+                        <img src="images/menu_11.jpg">
                         <div class="card-body text-center">
                             <h5>Ramen Stew with Cheese</h5>
                             <p>Hot and creamy ramen cooked with rich cheese and savory broth.</p>
@@ -702,7 +737,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card nz-menu-card">
-                        <img src="images/menu_12.JPG">
+                        <img src="images/menu_12.jpg">
                         <div class="card-body text-center">
                             <h5>Mini Nashville</h5>
                             <p>Crispy chicken coated in our signature Nashville spicy sauce.</p>
@@ -748,7 +783,4 @@
         });
     </script>
 </body>
-
 </html>
-
-
